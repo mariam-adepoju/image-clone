@@ -30,7 +30,7 @@ const navlinks: Navlink[] = [
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <header className="flex items-center justify-between px-6 py-4">
+    <header className="w-full flex items-center justify-between px-6 py-4">
       <div className="flex items-center gap-2">
         <Image
           src="/icons/kreaLogo.svg"

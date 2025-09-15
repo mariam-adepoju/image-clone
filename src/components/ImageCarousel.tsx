@@ -30,7 +30,7 @@ export default function Carousel({ items }: CarouselProps) {
           )}%)`,
         }}
       >
-        {items.map((item) => (
+        {items.map((item, i) => (
           <div
             key={item.id}
             className="min-w-[66.66%] md:min-w-[66.66%] flex justify-center px-6 pt-15 pb-0.5 "
@@ -41,6 +41,7 @@ export default function Carousel({ items }: CarouselProps) {
                 alt={item.alt_description || "Unsplash Image"}
                 fill
                 className="object-cover"
+                priority={i === 0}
               />
 
               {/* Overlay text */}
